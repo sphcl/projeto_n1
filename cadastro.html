@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cadastro de Funcionários</title>
+        <!-- Importando css externo para herdar o visual da sua tabela -->
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <br>
+        <!-- O formulário envolve a tabela inteira para poder enviar os dados -->
+        <form method="POST">
+            <table>
+                <!-- Cabeçalho mesclando as 4 colunas (colspan="4") -->
+                <tr>
+                    <th colspan="4" style="background-color: #59bcf5;">Cadastro de Funcionários</th>
+                </tr>
+                
+                <!-- O campo Nome ocupa 1 coluna pro texto e 3 colunas pro input -->
+                <tr>
+                    <td style="text-align: right; width: 20%;"><b>Nome:</b></td>
+                    <td colspan="3" style="text-align: left;"><input type="text" name="nome" size="60" maxlength="80"></td>
+                </tr>
+                
+                <!-- A partir daqui usamos as 4 colunas: Texto | Input | Texto | Input -->
+                <tr>
+                    <td style="text-align: right;"><b>Endereço:</b></td>
+                    <td style="text-align: left;"><input type="text" name="endereco" size="30"></td>
+                    <td style="text-align: right; width: 15%;"><b>Número:</b></td>
+                    <td style="text-align: left;"><input type="text" name="numero" size="10"></td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: right;"><b>Complemento:</b></td>
+                    <td style="text-align: left;"><input type="text" name="complemento" size="30"></td>
+                    <td style="text-align: right;"><b>Celular:</b></td>
+                    <td style="text-align: left;"><input type="text" name="celular" size="15"></td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: right;"><b>Bairro:</b></td>
+                    <td style="text-align: left;"><input type="text" name="bairro" size="30"></td>
+                    <td style="text-align: right;"><b>CEP:</b></td>
+                    <td style="text-align: left;"><input type="text" name="cep" size="15"></td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: right;"><b>Cidade:</b></td>
+                    <td style="text-align: left;"><input type="text" name="cidade" size="30"></td>
+                    <td style="text-align: right;"><b>UF:</b></td>
+                    <td style="text-align: left;">
+                        <!-- O professor ensinou a usar a tag select para listas suspensas -->
+                        <select name="uf">
+                            <option value="SP">SP</option>
+                            <option value="AM" selected>AM</option>
+                            <option value="RJ">RJ</option>
+                            <option value="MG">MG</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: right;"><b>Email:</b></td>
+                    <td style="text-align: left;"><input type="text" name="email" size="30"></td>
+                    <td style="text-align: right;"><b>Cargo:</b></td>
+                    <td style="text-align: left;">
+                        <select name="cargo">
+                            <option value="veterinario">Veterinário(a)</option>
+                            <option value="recepcao">Recepção</option>
+                            <option value="banho_tosa">Banho e Tosa</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: right;"><b>Usuário:</b></td>
+                    <td style="text-align: left;"><input type="text" name="usuario" size="20"></td>
+                    <td style="text-align: right;"><b>Senha:</b></td>
+                    <td style="text-align: left;"><input type="password" name="senha" size="20"></td>
+                </tr>
+                
+                <tr>
+                    <td style="text-align: right;"><b>Departamento:</b></td>
+                    <td colspan="2" style="text-align: left;">
+                        <select name="departamento">
+                            <option value="">Selecione Departamento</option>
+                            <option value="clinica">Clínica Médica</option>
+                            <option value="estetica">Estética Animal</option>
+                            <option value="adm">Administrativo</option>
+                        </select>
+                    </td>
+                    <!-- Botão de enviar com estilo CSS inline básico para dar destaque -->
+                    <td style="text-align: center;">
+                        <input type="submit" value="Enviar" style="background-color: #59bcf5; color: #FFFFFF; font-weight: bold; border-style: solid; border-color: #2c3e50; border-width: 1px; padding: 5px 15px;">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+/* estilo.css - Apenas regras seguras que não quebram layouts de tabelas */
+body {
+    font-family: arial;
+    margin: 0px; /* Remove as margens brancas padrão do navegador */
+}
+
+p {
+    color: #2c3e50;
+}

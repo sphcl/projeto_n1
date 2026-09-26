@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Menu lateral</title>
+                <!-- importando css externo -->
+        <link rel="stylesheet" href="estilo.css">
+        <style>
+        /* Usando CSS interno para formatar o corpo e os links */
+            body {
+                font-family: arial;
+                background-color: #c9edff; /* Um fundo bem clarinho para o menu */
+            }
+
+            p {
+                margin-top: 1px;    /* Espaço em cima do link */
+                margin-bottom: 1px; /* Espaço maior embaixo do link */
+                margin-left: 10px;
+            }
+
+            /* Estilização de links exatamente como ensinado na Aula 5 */
+            a:link { 
+                color: #b0c9e2; 
+                text-decoration: none; 
+            }
+            a:visited { 
+                color: #0a5eb8; 
+                text-decoration: none; 
+            }
+            a:active { 
+                color: #cbdbe4; 
+                font-weight: bold; 
+            }
+            a:link:hover { 
+                background-color: #d4d4d4; 
+                color: #ffffff; 
+                text-decoration: none; 
+            }
+
+            form {
+                margin-left: 10px;
+                font-size: 16px; /* Aumentei um pouco a fonte do formulário também */
+            }
+
+        </style>
+    </head>
+    <body>
+        <p><a href="home.html" target="conteudo"><b>Home</b></a></p><br>
+        <p><a href="sobreEmpresa.html" target="conteudo"><b>Sobre a empresa</b></a></p><br>
+        <p><a href="listaFuncionarios.html" target="conteudo"><b>Lista de Funcionários</b></a></p><br>
+        <p><a href="cadastro.html" target="conteudo"><b>Cadastro</b></a></p><br>
+        <p><a href="suporte.html" target="conteudo"><b>Suporte</b></a></p><br>
+
+        <br> 
+        <!-- css inline -->
+        <hr style="border: 1px solid #59bcf5; margin: 0 10px;"> <!-- Uma linha para separar o menu do login -->
+        <br>
+        <br>
+
+        <!-- Formulário de Login -->
+        <p color=""><b>Formulário de Login</b></p>
+        <br>
+        <form method="GET">
+            Usuário:<br>
+            <input type="text" name="usuario" size="10" maxlength="10"><br><br>
+            Senha:<br>
+            <input type="password" name="senha" size="10" maxlength="8"><br><br>
+            <input type="submit" value="Login">
+        </form>
+
+    </body>
+</html>
