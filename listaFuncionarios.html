@@ -1,44 +1,61 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Lista de Funcionários</title>
-        <!-- importando css externo -->
+        <title>Lista de Funcionários - Vida Animal</title>
+
+        <!-- CSS externo -->
         <link rel="stylesheet" href="estilo.css">
+
+        <!-- CSS interno -->
+        <style type="text/css">
+            td {
+                border-style: solid;
+                border-width: 1px;
+                border-color: #cde4fa;
+            }
+        </style>
     </head>
-    <body leftmargin="10" topmargin="10">
-        <table width="100%" border="1px">
-            <tr height="50">
-                <td align="center" colspan="4" bgcolor="#f0e385"><b>Tabela de Funcionários Registrados</b></td>
-            </tr>
+    <body>
+        <table width="100%">
             <tr>
-                <td width="50" bgcolor="#cccccc">Codigo</td>
-                <td width="150" bgcolor="#cccccc" align="center">Nome</td>
-                <td width="20" bgcolor="#cccccc" align="center">CRMV</td>
-                <td width="180" bgcolor="#cccccc" align="center">Observação</td>
+                <th colspan="4">Funcionários Registrados</th>
             </tr>
+
             <tr>
-                <td>1</td>
+                <td bgcolor="#cde4fa" width="60" align="center"><b>Código</b></td>
+                <td bgcolor="#cde4fa"><b>Nome</b></td>
+                <td bgcolor="#cde4fa" width="80" align="center"><b>CRMV</b></td>
+                <td bgcolor="#cde4fa"><b>Especialidade</b></td>
+            </tr>
+
+            <tr>
+                <td align="center">1</td>
                 <td>Sophia Cardoso de Lima</td>
-                <td>5523</td>
+                <td align="center">5523</td>
                 <td>Cirurgiã Plástica</td>
             </tr>
             <tr>
-                <td>2</td>
-                <td>Arthur Versiani Silva</td>
-                <td>3354</td>
-                <td>Neurologista</td>
+                <td bgcolor="#eaf6fd" align="center">2</td>
+                <td bgcolor="#eaf6fd">Arthur Versiani Silva</td>
+                <td bgcolor="#eaf6fd" align="center">3354</td>
+                <td bgcolor="#eaf6fd">Neurologista</td>
             </tr>
             <tr>
-                <td>3</td>
+                <td align="center">3</td>
                 <td>Letícia Nascimento de Almeida</td>
-                <td>2500</td>
-                <td>Clinica Geral</td>
+                <td align="center">2500</td>
+                <td>Clínica Geral</td>
             </tr>
             <tr>
-                <td>4</td>
-                <td>Nathália Alves Santos</td>
-                <td>3450</td>
-                <td>Anestesista</td>
+                <td bgcolor="#eaf6fd" align="center">4</td>
+                <td bgcolor="#eaf6fd">Nathália Alves Santos</td>
+                <td bgcolor="#eaf6fd" align="center">3450</td>
+                <td bgcolor="#eaf6fd">Anestesista</td>
+            </tr>
+
+            <tr>
+                <td bgcolor="#cde4fa" colspan="3" align="right"><b>Total de funcionários:</b></td>
+                <td bgcolor="#cde4fa"><b>4</b></td>
             </tr>
         </table>
     </body>

@@ -1,71 +1,65 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Menu lateral</title>
-                <!-- importando css externo -->
+        <title>Menu Lateral - Vida Animal</title>
+
+        <!-- CSS externo -->
         <link rel="stylesheet" href="estilo.css">
-        <style>
-        /* Usando CSS interno para formatar o corpo e os links */
+
+        <!-- CSS interno -->
+        <style type="text/css">
             body {
-                font-family: arial;
-                background-color: #c9edff; /* Um fundo bem clarinho para o menu */
+                background-color: #eaf6fd;
+                margin-top: 10px;
+                margin-left: 15px;
+                margin-right: 15px;
             }
 
             p {
-                margin-top: 1px;    /* Espaço em cima do link */
-                margin-bottom: 1px; /* Espaço maior embaixo do link */
-                margin-left: 10px;
+                margin-top: 4px;
+                margin-bottom: 4px;
             }
 
-            /* Estilização de links exatamente como ensinado na Aula 5 */
-            a:link { 
-                color: #b0c9e2; 
-                text-decoration: none; 
-            }
-            a:visited { 
-                color: #0a5eb8; 
-                text-decoration: none; 
-            }
-            a:active { 
-                color: #cbdbe4; 
-                font-weight: bold; 
-            }
-            a:link:hover { 
-                background-color: #d4d4d4; 
-                color: #ffffff; 
-                text-decoration: none; 
+            a:link, a:visited {
+                font-weight: bold;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                padding-left: 6px;
+                padding-right: 6px;
             }
 
-            form {
-                margin-left: 10px;
-                font-size: 16px; /* Aumentei um pouco a fonte do formulário também */
+            a:link:hover {
+                background-color: #59bcf5;
+                color: #FFFFFF;
             }
 
+            hr {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
         </style>
     </head>
     <body>
-        <p><a href="home.html" target="conteudo"><b>Home</b></a></p><br>
-        <p><a href="sobreEmpresa.html" target="conteudo"><b>Sobre a empresa</b></a></p><br>
-        <p><a href="listaFuncionarios.html" target="conteudo"><b>Lista de Funcionários</b></a></p><br>
-        <p><a href="cadastro.html" target="conteudo"><b>Cadastro</b></a></p><br>
-        <p><a href="suporte.html" target="conteudo"><b>Suporte</b></a></p><br>
+        <p style="font-size: 9pt; color: #59bcf5;"><b>MENU</b></p>
+        <p><a href="home.html" target="conteudo">Home</a></p>
+        <p><a href="sobreEmpresa.html" target="conteudo">Sobre a Empresa</a></p>
+        <p><a href="listaFuncionarios.html" target="conteudo">Lista de Funcionários</a></p>
+        <p><a href="cadastro.html" target="conteudo">Cadastro</a></p>
+        <p><a href="suporte.html" target="conteudo">Suporte</a></p>
 
-        <br> 
-        <!-- css inline -->
-        <hr style="border: 1px solid #59bcf5; margin: 0 10px;"> <!-- Uma linha para separar o menu do login -->
-        <br>
-        <br>
+        <hr>
 
-        <!-- Formulário de Login -->
-        <p color=""><b>Formulário de Login</b></p>
-        <br>
-        <form method="GET">
-            Usuário:<br>
-            <input type="text" name="usuario" size="10" maxlength="10"><br><br>
-            Senha:<br>
-            <input type="password" name="senha" size="10" maxlength="8"><br><br>
-            <input type="submit" value="Login">
+        <!-- login -->
+
+        <p style="font-size: 9pt; color: #59bcf5;"><b>ÁREA DO FUNCIONÁRIO</b></p>
+        <form method="POST">
+            <p>Usuário:<br>
+            <input type="text" name="usuario" size="14" maxlength="10"></p>
+
+            <p>Senha:<br>
+            <input type="password" name="senha" size="14" maxlength="8"></p>
+
+            <p><input type="submit" value="Entrar" style="background-color: #59bcf5; color: #FFFFFF; font-weight: bold; border-color: #0a5eb8; padding-left: 20px; padding-right: 20px;"></p>
         </form>
-
     </body>
 </html>

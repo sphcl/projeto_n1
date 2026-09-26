@@ -1,9 +1,85 @@
-/* estilo.css - Apenas regras seguras que não quebram layouts de tabelas */
+
+/* CSS externo usado por todas as páginas */
+
 body {
     font-family: arial;
-    margin: 0px; /* Remove as margens brancas padrão do navegador */
+    font-size: 11pt;
+    color: #2c3e50;
+    background-color: #FFFFFF;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 p {
     color: #2c3e50;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+table {
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cde4fa;
+}
+
+th {
+    background-color: #59bcf5;
+    color: #FFFFFF;
+    font-family: arial;
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+td {
+    font-family: arial;
+    font-size: 11pt;
+    color: #2c3e50;
+    vertical-align: middle;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+input, select, textarea {
+    font-family: arial;
+    font-size: 11pt;
+    color: #2c3e50;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #59bcf5;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+hr {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #59bcf5;
+}
+
+a:link {
+    color: #0a5eb8;
+    text-decoration: none;
+}
+a:visited {
+    color: #0a5eb8;
+    text-decoration: none;
+}
+a:active {
+    color: #2c3e50;
+    font-weight: bold;
+}
+a:link:hover {
+    background-color: #cde4fa;
+    text-decoration: none;
 }
